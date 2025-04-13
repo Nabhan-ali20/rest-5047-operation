@@ -1,0 +1,35 @@
+@startuml
+start
+
+:Login to Operations Dashboard;
+
+if (Restaurant needs activation?) then (Yes)
+  :Select Restaurant;
+  :Activate/Deactivate Account;
+endif
+
+if (Analytics required?) then (Yes)
+  :Open Analytics Module;
+  :View Cross-System Statistics;
+endif
+
+if (New promotion needed?) then (Yes)
+  :Enter Promotion Details;
+  :Select Target Restaurants;
+  :Submit Campaign;
+  :Send Notifications;
+endif
+
+if (Loyalty update needed?) then (Yes)
+  :Access Loyalty Dashboard;
+  :Update Customer Points;
+endif
+
+if (Social sharing change?) then (Yes)
+  :Toggle Social Sharing;
+endif
+
+:Logout;
+
+stop
+@enduml
